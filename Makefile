@@ -1,5 +1,6 @@
 
 install:
+		gem install httparty
 
-
-run:
+export:
+		ruby scripts/data_export.rb

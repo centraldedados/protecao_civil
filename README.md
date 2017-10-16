@@ -1,16 +1,22 @@
 # Dados da Autoridade da Autoridade Nacional da Proteção Civil  
-🔥👩‍🚒🚑🚒🚓🏥🚨⛈
+🚑🚒🚓
 
 Fonte - [website da Autoridade Nacional da Proteção Civil](http://www.prociv.pt/)
 
 ##### Como utilizar
+1. ```make install``` para instaler dependências ruby
+2. Configurar o intervalo de datas pretendido em config.rb
+3. Executar ```make export``` 
 
-##### Notas
-Website feito em Angular, [lançado em Julho/2016](https://www.publico.pt/2016/07/29/sociedade/noticia/novo-site-da-proteccao-civil-gerir-ou-disponibilizar-informacao-1739727)
+Na pasta ```data``` são guardados os ficheiros exportados.
+
+
+#### Notas
+Website desenvolvido em Angular, [lançado em Julho/2016](https://www.publico.pt/2016/07/29/sociedade/noticia/novo-site-da-proteccao-civil-gerir-ou-disponibilizar-informacao-1739727)
 Exportação em XLSX, CSV e KMZ.  
-Só permite exportação de intervalos de 7 dias.  
+Só permite a exportação até um máximo de 7 dias de intervalo.  
 
-**Endpoint para exportação do dia**  
+**Endpoint para exportação do dia**
 ```
 http://www.prociv.pt/en-US/Pages/export.aspx?ex=1&l=0&d=&c=&f=&t=0&n=0&e=0
 ```  
@@ -22,8 +28,8 @@ http://www.prociv.pt/pt-PT/Paginas/export.aspx?ex=1&l=1&d=&n=&s=&f=&e=
 
 | Variável | Descrição |
 | -------- | --------- |
-| ex | exportar |
-| l | obrigatoriedade de colocar um intervalo de datas |
+| ex | boolean, sempre verdadeiro. Exportar. |
+| l | boolean, se verdadeiro é obrigatório colocar um intervalo de datas.  |
 | d | distrito (ver tabela, deixar sem código para todos os distritos) |
 | n | código da natureza da ocorrência (ver tabela, deixar sem código para todas as naturezas de ocorrência) |
 | s | data início (ex: 2017.01.01) |
