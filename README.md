@@ -8,11 +8,11 @@ Fonte - [website da Autoridade Nacional da Proteção Civil](http://www.prociv.p
 2. Configurar o intervalo de datas pretendido em config.rb
 3. Executar ```make export``` 
 
-Na pasta ```data``` são guardados os ficheiros exportados.
+Na pasta ```data``` são guardados os ficheiros exportados, um para cada dia de ocorrências.
 
 
 #### Notas
-Website desenvolvido em Angular, [lançado em Julho/2016](https://www.publico.pt/2016/07/29/sociedade/noticia/novo-site-da-proteccao-civil-gerir-ou-disponibilizar-informacao-1739727)
+Website desenvolvido em Angular, [lançado em Julho/2016](https://www.publico.pt/2016/07/29/sociedade/noticia/novo-site-da-proteccao-civil-gerir-ou-disponibilizar-informacao-1739727)  
 Exportação em XLSX, CSV e KMZ.  
 Só permite a exportação até um máximo de 7 dias de intervalo.  
 

@@ -1,5 +1,5 @@
 
-@sleep_interval = 5
+@sleep_interval = 2.5 # not to bother the server too much
 @export_days_interval = 7 # maximum export interval is 7
 @export_format = "csv" # XLSX, CSV or KMZ
 
