@@ -4,8 +4,8 @@
 Fonte - [website da Autoridade Nacional da Proteção Civil](http://www.prociv.pt/)
 
 ##### Como utilizar
-1. ```make install``` para instaler dependências ruby
-2. Configurar o intervalo de datas pretendido em config.rb
+1. ```make install``` para instalar uma dependência
+2. Configurar o intervalo de datas pretendido em ```config.rb```  
 3. Executar ```make export``` 
 
 Na pasta ```data``` são guardados os ficheiros exportados, um para cada dia de ocorrências.
