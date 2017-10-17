@@ -7,7 +7,7 @@ fonte: [website](http://www.prociv.pt/) da Autoridade Nacional da Proteção Civ
 2. Executar ```make export``` 
 
 Na pasta ```data``` são guardados os ficheiros exportados.  
-Por omissão é um ficheiro um cada dia de ocorrências.
+Por omissão é um ficheiro por cada dia de ocorrências.
 
 
 ### Notas
