@@ -1,17 +1,16 @@
-# Dados da Autoridade da Autoridade Nacional da Proteção Civil  
-🚑🚒🚓
+# Dados da Autoridade Nacional da Proteção Civil  
 
-Fonte - [website da Autoridade Nacional da Proteção Civil](http://www.prociv.pt/)
+fonte: [website](http://www.prociv.pt/) da Autoridade Nacional da Proteção Civil
 
-##### Como utilizar
+### Como utilizar
 1. Configurar o intervalo de datas pretendido no ficheiro de configuração ```config.rb```  
 2. Executar ```make export``` 
 
 Na pasta ```data``` são guardados os ficheiros exportados.  
-Por omissão é um ficheiro um para cada dia de ocorrências, contudo é possível exportar até 7 dias de intervalo, alterando a variável ```@export_days_interval``` no ficheiro de configuração.
+Por omissão é um ficheiro um por dia de ocorrências.
 
 
-#### Notas
+### Notas
 O website da ANPC está desenvolvido em Angular, [lançado em Julho/2016](https://www.publico.pt/2016/07/29/sociedade/noticia/novo-site-da-proteccao-civil-gerir-ou-disponibilizar-informacao-1739727).
 Exportação em XLSX, CSV e KMZ.  
 Só permite a exportação directa no UI até um máximo de 7 dias de intervalo.  
@@ -36,7 +35,7 @@ http://www.prociv.pt/pt-PT/Paginas/export.aspx?ex=1&l=1&d=&n=&s=&f=&e=
 | f | data final (ex: 2017.01.07) |
 | e | tipo de exportação (XLSX: 0, CSV: 1, KMZ: 2) |
 
-##### Colunas dos ficheiros XLSX e CSV
+#### Colunas dos ficheiros XLSX e CSV
 | Nome | Descrição |
 | ---- | --------- |
 | Numero | |
@@ -55,10 +54,10 @@ http://www.prociv.pt/pt-PT/Paginas/export.aspx?ex=1&l=1&d=&n=&s=&f=&e=
 | NumeroMeiosAereosEnvolvidos | |
 | NumeroOperacionaisAereosEnvolvidos | |
 
-##### Distritos
+#### Distritos
 Listagem de distritos e respectivos códigos
 
-| Código | Distrito |
+| ID | Distrito |
 |----|----------|
 | 1 | Aveiro |
 | 2 | Beja |
@@ -82,7 +81,7 @@ Listagem de distritos e respectivos códigos
 #### Natureza de Ocorrências
 Listagem da natureza de Ocorrências e respectivos códigos
 
-| Código | Natureza |
+| ID | Natureza |
 |----|----------|
 |196 | Acidentes / Abalroamento aquático|
 |190 | Acidentes / Abalroamento ferroviário|
