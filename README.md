@@ -7,7 +7,7 @@ fonte: [website](http://www.prociv.pt/) da Autoridade Nacional da Proteção Civ
 2. Executar ```make export``` 
 
 Na pasta ```data``` são guardados os ficheiros exportados.  
-Por omissão é um ficheiro um por cada dia de ocorrências.
+Por omissão é um ficheiro um cada dia de ocorrências.
 
 
 ### Notas
@@ -28,9 +28,9 @@ http://www.prociv.pt/pt-PT/Paginas/export.aspx?ex=1&l=1&d=&n=&s=&f=&e=
 | Parámetro | Descrição |
 | -------- | --------- |
 | ex | boolean, sempre verdadeiro para exportação |
-| l | boolean, se verdadeiro é obrigatório colocar um intervalo de datas.  |
-| d | distrito (ver tabela, deixar sem código para todos os distritos) |
-| n | código da natureza da ocorrência (ver tabela, deixar sem código para todas as naturezas de ocorrência) |
+| l | boolean, se verdadeiro é obrigatório colocar um intervalo de datas, caso contrário exporta o dia corrente.  |
+| d | distrito (ver tabela, deixar sem Id para todos os distritos) |
+| n | código da natureza da ocorrência (ver tabela, deixar sem Id para todas as naturezas de ocorrência) |
 | s | data início (ex: 2017.01.01) |
 | f | data final (ex: 2017.01.07) |
 | e | tipo de exportação (XLSX: 0, CSV: 1, KMZ: 2) |
@@ -57,7 +57,7 @@ http://www.prociv.pt/pt-PT/Paginas/export.aspx?ex=1&l=1&d=&n=&s=&f=&e=
 #### Distritos
 Listagem de distritos e respectivos códigos
 
-| ID | Distrito |
+| Id | Distrito |
 |----|----------|
 | 1 | Aveiro |
 | 2 | Beja |
@@ -81,7 +81,7 @@ Listagem de distritos e respectivos códigos
 #### Natureza de Ocorrências
 Listagem da natureza de Ocorrências e respectivos códigos
 
-| ID | Natureza |
+| Id | Natureza |
 |----|----------|
 |196 | Acidentes / Abalroamento aquático|
 |190 | Acidentes / Abalroamento ferroviário|
