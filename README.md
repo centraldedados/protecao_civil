@@ -4,17 +4,17 @@
 Fonte - [website da Autoridade Nacional da Proteção Civil](http://www.prociv.pt/)
 
 ##### Como utilizar
-1. ```make install``` para instalar uma dependência
-2. Configurar o intervalo de datas pretendido em ```config.rb```  
-3. Executar ```make export``` 
+1. Configurar o intervalo de datas pretendido no ficheiro de configuração ```config.rb```  
+2. Executar ```make export``` 
 
-Na pasta ```data``` são guardados os ficheiros exportados, um para cada dia de ocorrências.
+Na pasta ```data``` são guardados os ficheiros exportados.  
+Por omissão é um ficheiro um para cada dia de ocorrências, contudo é possível exportar até 7 dias de intervalo, alterando a variável ```@export_days_interval``` no ficheiro de configuração.
 
 
 #### Notas
-Website desenvolvido em Angular, [lançado em Julho/2016](https://www.publico.pt/2016/07/29/sociedade/noticia/novo-site-da-proteccao-civil-gerir-ou-disponibilizar-informacao-1739727)  
+O website da ANPC está desenvolvido em Angular, [lançado em Julho/2016](https://www.publico.pt/2016/07/29/sociedade/noticia/novo-site-da-proteccao-civil-gerir-ou-disponibilizar-informacao-1739727).
 Exportação em XLSX, CSV e KMZ.  
-Só permite a exportação até um máximo de 7 dias de intervalo.  
+Só permite a exportação directa no UI até um máximo de 7 dias de intervalo.  
 
 **Endpoint para exportação do dia**
 ```

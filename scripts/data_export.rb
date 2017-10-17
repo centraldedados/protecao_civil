@@ -1,26 +1,31 @@
-require 'httparty'
+require 'open-uri'
 require 'date'
-require 'csv'
 require_relative '../config.rb'
 
+# Export formats
 export_formats = {
   "xlsx" => 0,
   "csv" => 1,
   "kmz" => 2
 }
 
-# Check if export format is correct
+# Check for configuration errors
+## Check if export format is correct
 if export_formats[@export_format].nil?
- puts "Formato de exportação inexistente. Verifique a configuração."
- exit
+  puts "Formato de exportação inexistente. Verifique a configuração."
+  exit
+## Check for export dates interval >= 7 days
+elsif (@export_end_date - @export_start_date > 7)
+  puts "Intervalo de datas a exportar não pode ser superior a 7 dias."
+  exit
 end
 
 
 # URL request parameters
 ex = 1
 l = 1
-d = '' # District, empty for all
-n = '' # Occurrence code, empty for all
+d = @district_id
+n = @occurrence_id
 s = @export_start_date
 f = @export_end_date
 e = export_formats[@export_format]
@@ -61,16 +66,16 @@ date_range.each_with_index do |date, index|
   request_url = "http://www.prociv.pt/pt-PT/Paginas/export.aspx?ex=#{ex}&l=#{l}&d=#{d}&n=#{n}&s=#{date}&f=#{date}&e=#{e}"
   puts "A pedir as ocorrências de #{reformat_date(date)}..."
 
-  response = HTTParty.get(
+  response = open(
     request_url,
-    headers: {"User-Agent" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:42.0) Gecko/20100101 Firefox/42.0"})
+    {"User-Agent" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:42.0) Gecko/20100101 Firefox/42.0"}).read
 
   # Setup filename and extension to keep
   filename_extension = @export_format
   file = "data/#{reformat_date(date)}.#{filename_extension}"
 
   puts "A guardar ficheiro #{filename_extension}..."
-  write_file(file, response.body)
+  write_file(file, response)
 
   puts
   sleep @sleep_interval
