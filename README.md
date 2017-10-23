@@ -1,6 +1,6 @@
 # 🚨 Dados da Autoridade Nacional da Proteção Civil  
 
-fonte: [website](http://www.prociv.pt/) da Autoridade Nacional da Proteção Civil
+Fonte: [website](http://www.prociv.pt/) da Autoridade Nacional da Proteção Civil
 
 ### Como utilizar
 1. Configurar o intervalo de datas pretendido no ficheiro de configuração ```config.rb```  
@@ -11,16 +11,16 @@ Por omissão é um ficheiro por cada dia de ocorrências.
 
 
 ### Notas
-O website da ANPC está desenvolvido em Angular, [lançado em Julho/2016](https://www.publico.pt/2016/07/29/sociedade/noticia/novo-site-da-proteccao-civil-gerir-ou-disponibilizar-informacao-1739727).
+O website da ANPC está desenvolvido em Angular, [lançado em Julho/2016](https://www.publico.pt/2016/07/29/sociedade/noticia/novo-site-da-proteccao-civil-gerir-ou-disponibilizar-informacao-1739727).   
 Exportação em XLSX, CSV e KMZ.  
-Só permite a exportação directa no UI até um máximo de 7 dias de intervalo.  
+Só permite a exportação directa no UI até um máximo de 7 dias de intervalo (este script de exportação ultrapassa essa limitação) 
 
 **Endpoint para exportação somente do dia**
 ```
 http://www.prociv.pt/en-US/Pages/export.aspx?ex=1&l=0&d=&c=&f=&t=0&n=0&e=0
 ```  
 
-**Endpoint para exportação de histórico (intervalo máximo de 7 dias)**
+**Endpoint para exportação de histórico** (intervalo máximo de 7 dias)
 ```
 http://www.prociv.pt/pt-PT/Paginas/export.aspx?ex=1&l=1&d=&n=&s=&f=&e=
 ```   
@@ -31,8 +31,8 @@ http://www.prociv.pt/pt-PT/Paginas/export.aspx?ex=1&l=1&d=&n=&s=&f=&e=
 | l | boolean, se verdadeiro é obrigatório colocar um intervalo de datas, caso contrário exporta o dia corrente.  |
 | d | distrito (ver tabela, deixar sem Id para todos os distritos) |
 | n | código da natureza da ocorrência (ver tabela, deixar sem Id para todas as naturezas de ocorrência) |
-| s | data início (ex: 2017.01.01) |
-| f | data final (ex: 2017.01.07) |
+| s | data início (ex: 2017.06.01) |
+| f | data final (ex: 2017.06.30) |
 | e | tipo de exportação (XLSX: 0, CSV: 1, KMZ: 2) |
 
 #### Colunas dos ficheiros XLSX e CSV
