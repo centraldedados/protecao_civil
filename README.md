@@ -1,4 +1,4 @@
-# Dados da Autoridade Nacional da Proteção Civil  
+# 🚨 Dados da Autoridade Nacional da Proteção Civil  
 
 fonte: [website](http://www.prociv.pt/) da Autoridade Nacional da Proteção Civil
 
@@ -15,7 +15,7 @@ O website da ANPC está desenvolvido em Angular, [lançado em Julho/2016](https:
 Exportação em XLSX, CSV e KMZ.  
 Só permite a exportação directa no UI até um máximo de 7 dias de intervalo.  
 
-**Endpoint para exportação do dia**
+**Endpoint para exportação somente do dia**
 ```
 http://www.prociv.pt/en-US/Pages/export.aspx?ex=1&l=0&d=&c=&f=&t=0&n=0&e=0
 ```  
@@ -55,7 +55,7 @@ http://www.prociv.pt/pt-PT/Paginas/export.aspx?ex=1&l=1&d=&n=&s=&f=&e=
 | NumeroOperacionaisAereosEnvolvidos | |
 
 #### Distritos
-Listagem de distritos e respectivos códigos
+Listagem de distritos
 
 | Id | Distrito |
 |----|----------|
@@ -79,7 +79,7 @@ Listagem de distritos e respectivos códigos
 | 19 | Viseu |
 
 #### Natureza de Ocorrências
-Listagem da natureza de Ocorrências e respectivos códigos
+Listagem da natureza de ocorrências
 
 | Id | Natureza |
 |----|----------|
