@@ -14,11 +14,12 @@ export_formats = {
 if export_formats[@export_format].nil?
   puts "Formato de exportação inexistente. Verifique a configuração."
   exit
-## Check for export dates interval >= 7 days
-elsif (@export_end_date - @export_start_date > 7)
-  puts "Intervalo de datas a exportar não pode ser superior a 7 dias."
-  exit
 end
+## Check for export dates interval >= 7 days
+#elsif (@export_end_date - @export_start_date > 7)
+#  puts "Intervalo de datas a exportar não pode ser superior a 7 dias."
+#  exit
+#end
 
 
 # URL request parameters
