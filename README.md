@@ -2,9 +2,9 @@
 
 Fonte: [website](http://www.prociv.pt/) da Autoridade Nacional da Proteção Civil
 
-## Dados por Ano
-2016: ```121.187 eventos```  
-2017: ```217.989 eventos```  
+### Ocorrências por ano
+2016: ```121.187 ocorrências```  
+2017: ```217.989 ocorrências```  
 
 
 ### Como utilizar
