@@ -3,8 +3,9 @@
 Fonte: [website](http://www.prociv.pt/) da Autoridade Nacional da Proteção Civil
 
 ## Dados por Ano
-2016: 121.187 eventos
-2017: 217.989 eventos
+2016: ```121.187 eventos```  
+2017: ```217.989 eventos```  
+
 
 ### Como utilizar
 1. Configurar o intervalo de datas pretendido no ficheiro de configuração ```config.rb```  
