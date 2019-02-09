@@ -5,7 +5,7 @@ Fonte: [website](http://www.prociv.pt/) da Autoridade Nacional da Proteção Civ
 ### Ocorrências por ano
 2016: ```121.187 ocorrências```  
 2017: ```217.989 ocorrências```  
-2018: ```234.806 ocorrências``
+2018: ```234.806 ocorrências```
 
 
 ### Como utilizar
@@ -14,6 +14,11 @@ Fonte: [website](http://www.prociv.pt/) da Autoridade Nacional da Proteção Civ
 
 Na pasta ```data``` são guardados os ficheiros exportados.  
 Por omissão é um ficheiro por cada dia de ocorrências.
+
+
+### Bugs
+- script para fazer merge dos ficheiros anuais num só  
+actualmente usa-se algo como ```cat 2018-*.csv > 2018.csv``` e retira-se os headers com um ```Find > Replace```.
 
 
 ### Notas
