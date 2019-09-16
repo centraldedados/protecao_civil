@@ -1,6 +1,6 @@
 require 'open-uri'
 require 'date'
-require_relative '../config.rb'
+require_relative './config.rb'
 
 # Export formats
 export_formats = {
