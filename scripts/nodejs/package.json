@@ -1,0 +1,19 @@
+{
+  "name": "protecao-civil",
+  "version": "1.0.0",
+  "description": "Ocorrências registadas pela Autoridade Nacional de Proteção Civil (2016-2018)",
+  "homepage": "https://github.com/centraldedados/protecao_civil/",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "PDDL-1.0",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "moment": "^2.24.0",
+    "request": "^2.88.0"
+  }
+}
