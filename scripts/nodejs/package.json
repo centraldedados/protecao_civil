@@ -6,13 +6,16 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "csv2kml": "set SUPPRESS_NO_CONFIG_WARNING=1 && node csv2kml",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "PDDL-1.0",
   "dependencies": {
+    "csv-parse": "^4.6.3",
     "dotenv": "^8.1.0",
+    "gtran-kml": "^1.2.3",
     "moment": "^2.24.0",
     "request": "^2.88.0"
   }
