@@ -15,7 +15,7 @@
   "dependencies": {
     "csv-parse": "^4.6.3",
     "dotenv": "^8.1.0",
-    "gtran-kml": "^1.2.3",
+    "gtran-kml": "^1.4.5",
     "moment": "^2.24.0",
     "request": "^2.88.0"
   }

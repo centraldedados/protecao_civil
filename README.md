@@ -10,7 +10,7 @@ Fonte: [website](http://www.prociv.pt/) da Autoridade Nacional da Proteção Civ
 
 ### Como utilizar
 1. Configurar o intervalo de datas pretendido no ficheiro de configuração ```config.rb```  
-2. Executar ```make export``` 
+2. Executar ```make run``` 
 
 Na pasta ```data``` são guardados os ficheiros exportados.  
 Por omissão é um ficheiro por cada dia de ocorrências.
