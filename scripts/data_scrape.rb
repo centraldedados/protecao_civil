@@ -1,6 +1,9 @@
+require_relative '../config.rb'
+
 require 'open-uri'
 require 'date'
-require_relative './config.rb'
+require 'fileutils'
+
 
 # Export formats
 export_formats = {
@@ -20,6 +23,9 @@ end
 #  puts "Intervalo de datas a exportar não pode ser superior a 7 dias."
 #  exit
 #end
+
+# Browser agent
+browser_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:42.0) Gecko/20100101 Firefox/42.0"
 
 
 # URL request parameters
@@ -67,13 +73,16 @@ date_range.each_with_index do |date, index|
   request_url = "http://www.prociv.pt/pt-PT/Paginas/export.aspx?ex=#{ex}&l=#{l}&d=#{d}&n=#{n}&s=#{date}&f=#{date}&e=#{e}"
   puts "A pedir as ocorrências de #{reformat_date(date)}..."
 
-  response = open(
+  response = URI.open(
     request_url,
-    {"User-Agent" => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:42.0) Gecko/20100101 Firefox/42.0"}).read
+    "User-Agent" => browser_agent
+  ).read
 
   # Setup filename and extension to keep
   filename_extension = @export_format
-  file = "data/#{reformat_date(date)}.#{filename_extension}"
+  year = date.split('.')[0].to_s
+  year_dir  = FileUtils.mkdir_p "data/#{year}"
+  file = "data/#{year}/#{reformat_date(date)}.#{filename_extension}"
 
   puts "A guardar ficheiro #{filename_extension}..."
   write_file(file, response)

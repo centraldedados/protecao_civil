@@ -1,6 +1,9 @@
 
-install:
-	gem install httparty --user-install
+run:
+	ruby scripts/data_scrape.rb
 
-scrape:
-	cd scripts; ruby data_export.rb
+merge:
+	ruby scripts/data_merge.rb 
+
+cleanup:
+	rm -i data/[0-9]*
