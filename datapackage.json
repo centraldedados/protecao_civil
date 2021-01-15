@@ -35,12 +35,6 @@
       "title": "Ocorrências em 2019",
       "path": "data/anpc-2019.csv",
       "format": "csv"
-    },
-    {
-      "name": "anpc-2020",
-      "title": "Ocorrências em 2020",
-      "path": "data/anpc-2020.csv",
-      "format": "csv"
     }
   ]
 }
