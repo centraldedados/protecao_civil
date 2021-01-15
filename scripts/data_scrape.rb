@@ -1,8 +1,7 @@
-require_relative '../config.rb'
-
 require 'open-uri'
 require 'date'
 require 'fileutils'
+require_relative '../config.rb'
 
 
 # Export formats
@@ -29,7 +28,7 @@ browser_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:42.0) Gecko/201
 
 
 # URL request parameters
-ex = 1
+ex = 0
 l = 1
 d = @district_id
 n = @occurrence_id
