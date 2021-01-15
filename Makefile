@@ -1,9 +1,14 @@
+install:
+	pip install csvkit
 
-run:
+scrape:
 	ruby scripts/data_scrape.rb
+
+convert:
+	ruby scripts/data_convert.rb
 
 merge:
 	ruby scripts/data_merge.rb 
 
-cleanup:
-	rm -i data/[0-9]*
+cleanup_scrapes:
+	rm -rf data/[0-9]*

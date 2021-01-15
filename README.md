@@ -1,24 +1,26 @@
 # 🚨 Dados da Autoridade Nacional da Proteção Civil  
 
+**Não há dados históricos após Julho de 2020, apenas são mostradas no website as ocorrências do momento.**
+
 Fonte: [website](http://www.prociv.pt/) da Autoridade Nacional da Proteção Civil
 
 ### Ocorrências por ano
 2016: ```121.187 ocorrências```  
 2017: ```217.989 ocorrências```  
-2018: ```234.806 ocorrências```
+2018: ```234.806 ocorrências```  
+2019: ```245.287 ocorrências```
 
 
 ### Como utilizar
-1. Configurar o intervalo de datas pretendido no ficheiro de configuração ```config.rb```  
-2. Executar ```make run``` 
+1. Executar ```make install```, para poder converter ficheiros Excel para CSV (os CSV exportados directamente da ANPC não estão em condições, sendo preferível efectuar uma conversão)
+2. Configurar o intervalo de datas pretendido no ficheiro de configuração ```config.rb```, 
+3. Executar ```make scrape``` 
+4. Executar ```make convert```, com o ano pretendido configurado na variável ```@year``` em ```config.rb```
+5. Executar ```make merge```, para criar o ficheiro final do ano pretendido
+6. Executar ```make cleanup```, para apagar os ficheiros diários temporários de scraping e conversão
 
 Na pasta ```data``` são guardados os ficheiros exportados.  
 Por omissão é um ficheiro por cada dia de ocorrências.
-
-
-### Bugs
-- script para fazer merge dos ficheiros anuais num só  
-actualmente usa-se algo como ```cat 2018-*.csv > 2018.csv``` e retira-se os headers com um ```Find > Replace```.
 
 
 ### Notas
