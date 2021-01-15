@@ -10,5 +10,5 @@ convert:
 merge:
 	ruby scripts/data_merge.rb 
 
-cleanup_scrapes:
+cleanup:
 	rm -rf data/[0-9]*

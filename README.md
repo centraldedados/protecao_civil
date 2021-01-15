@@ -8,7 +8,7 @@ Fonte: [website](http://www.prociv.pt/) da Autoridade Nacional da Proteção Civ
 2016: ```121.187 ocorrências```  
 2017: ```217.989 ocorrências```  
 2018: ```234.806 ocorrências```  
-2019: ```245.287 ocorrências```
+2019: ```245.286 ocorrências```
 
 
 ### Como utilizar
