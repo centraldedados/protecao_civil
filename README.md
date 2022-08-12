@@ -1,15 +1,15 @@
 # 🚨 Dados da Autoridade Nacional da Proteção Civil  
 
-**Não há dados históricos após Julho de 2020, apenas são mostradas no website as ocorrências do momento.**
+**Não há dados históricos directamente da Protecção Civil após 05/Julho/2020, apenas são mostradas no website as ocorrências do momento.**
 
-Fonte: [website](http://www.prociv.pt/) da Autoridade Nacional da Proteção Civil
+Fontes: [website](http://www.prociv.pt/) da Autoridade Nacional da Proteção Civil, base de dados do [Fogos.pt](https://fogos.pt/) (cortesia [@tomahock](https://github.com/tomahock))
 
 ### Ocorrências por ano
 2016: ```121.187 ocorrências```  
 2017: ```217.989 ocorrências```  
 2018: ```234.806 ocorrências```  
-2019: ```245.286 ocorrências```
-
+2019: ```245.286 ocorrências```  
+2020: ```xxx.xxx ocorrências```  (somente até 05/07/2020)
 
 ### Como utilizar
 1. Executar ```make install```, para poder converter ficheiros Excel para CSV (os CSV exportados directamente da ANPC não estão em condições, sendo preferível efectuar uma conversão)
